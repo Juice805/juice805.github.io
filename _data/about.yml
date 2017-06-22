@@ -11,7 +11,7 @@ skills:
   - "Javascript"
   - "MATLAB"
 awards: 
-  - {event: "SJSU Senior Project Symposium", award: "Best Oral Presentation"}
+  - {event: "SJSU Senior Project Symposium", name: "Best Oral Presentation"}
 
 likes:
   - "Linux"

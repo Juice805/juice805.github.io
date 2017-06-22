@@ -4,29 +4,23 @@ layout: default
 permalink: /about
 ---
 <div>
-{% assign awards = site.data.about.awards %}
-{% assign likes = site.data.about.likes %}
-{% assign skills = site.data.about.skills %}
-{% assign resume = site.data.about.resume %}
 	<p><span class="key">struct</span> About {</p>
 	<p>{{ site.tab }}<span class="key">var</span> me: <span class="other">String</span>?</p>
-	{% if awards.empty == false %}<p>{{ site.tab }}<span class="key">var</span> awards: [<span class="other">String</span>: <span class="other">String</span>]?</p>{% endif %}
-	{% if likes.empty == false %}<p>{{ site.tab }}<span class="key">var</span> likes: [<span class="other">String</span>]?</p>{% endif %}
-	{% if skills.empty == false %}<p>{{ site.tab }}<span class="key">var</span> skills: [<span class="other">String</span>]?</p>{% endif %}
-	{% if resume.empty == false %}<p>{{ site.tab }}<span class="key">var</span> resume: <span class="other">Data</span>?</p>{% endif %}
+	{% if site.data.about.awards.empty == false %}<p>{{ site.tab }}<span class="key">var</span> awards: [<span class="other">String</span>: <span class="other">String</span>]?</p>{% endif %}
+	{% if site.data.about.likes.empty == false %}<p>{{ site.tab }}<span class="key">var</span> likes: [<span class="other">String</span>]?</p>{% endif %}
+	{% if site.data.about.skills.empty == false %}<p>{{ site.tab }}<span class="key">var</span> skills: [<span class="other">String</span>]?</p>{% endif %}
+	{% if site.data.about.resume.empty == false %}<p>{{ site.tab }}<span class="key">var</span> resume: <span class="other">Data</span>?</p>{% endif %}
 	<p>}</p>
 	<br>
-	{% if awards.empty == false %}<p><span class="obj">harry</span>.<span class="obj">about</span>.<span class="obj">awards</span> <span class="func">=</span> [{<span class="str">"MATHCOUNTS 2013"</span>: <span class="str">"State 2nd Place Individual, 1st Place Team"</span>},</p>
-	<p>                      {<span class="str">"VEX Robotics 2017"</span>: <span class="str">"State Tournament Winner"</span>},</p>
-	<p>                      {<span class="str">"Philadelphia Classic 2016"</span>: <span class="str">"First Place Novice Team"</span>}];</p>
+	{% if site.data.about.awards.empty == false %}<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">awards</span> = [{% for award in site.data.about.awards %}{% if forloop.first == false %}<p>                 {% endif %}<span class="str">"{{ award.event }}"</span>: <span class="str">"{{ award.name }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
 	<br>{% endif %}
-{% if likes.empty == false %}
+{% if site.data.about.likes.empty == false %}
 	<p><span class="obj">harry</span>.<span class="obj">about</span>.<span class="obj">likes</span> <span class="func">=</span> [<span class="str">"Linux"</span>,</p>
 	<p>                     <span class="str">"Web Development"</span>,</p>
 	<p>                     <span class="str">"Deep Learning"</span>,</p>
 	<p>                     <span class="str">"Networking"</span>];</p>
 	<br>{% endif %}
-{% if skills.empty == false %}
+{% if site.data.about.skills.empty == false %}
 	<p><span class="obj">harry</span>.<span class="obj">about</span>.<span class="obj">skills</span> <span class="func">=</span> [<span class="str">"Redis"</span>,</p>
 	<p>                      <span class="str">"MongoDB"</span>,</p>
 	<p>                      <span class="str">"TensorFlow"</span>,</p>
@@ -36,6 +30,6 @@ permalink: /about
 	<p>                      <span class="str">"AngularJS 1+2"</span>,</p>
 	<p>                      <span class="str">"Linux"</span>];</p>
 	<br>{% endif %}
-{% if resume.empty == false %}
+{% if site.data.about.resume.empty == false %}
 	<p><a href="{% if resume.local == true %}{{ resume.url || relative_url }}{% else %}{{ resume.url }}{% endif %}"><span class="class">justin</span>.<span class="class">about</span>.<span class="class">resume</span> = <span class="other">FileManager</span>.<span class="key">default</span>.<span class="ometh">contents</span>(atPath: <span class="str">"resume.pdf"</span>)</a></p>{% endif %}
 </div>
