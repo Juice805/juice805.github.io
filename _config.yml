@@ -22,9 +22,10 @@ future: true
 credit: "Template made by Haoda Wang"
 
 collections:
-  - social
-  - projects:
-      output: true
+  social:
+    output: false
+  projects:
+    output: true
 
 # Build settings
 markdown: kramdown
