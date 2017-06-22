@@ -2,28 +2,24 @@ p {
   font-family: "Consolas", monospace;
   font-size: 14px;
   margin: 0.2em;
-  color: #C5C8C6;
+  color: #000000;
   white-space: pre;
 }
 
-.desc {
-  color: #B294BA;
+.key { /* Keyword */
+  color: #AA0D91;
 }
 
-.func {
-  color: #81A2BE;
+.class { /* Project Class */
+  color: #3F6E74;
 }
 
-.str {
-  color: #B5BD68;
+.str { /* String */
+  color: #C41A16;
 }
 
-.class {
-  color: #F0C674;
-}
-
-.obj {
-  color: #CC6666;
+.other { /* Other Class */
+  color: #5C2699;
 }
 
 a {
