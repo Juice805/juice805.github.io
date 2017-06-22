@@ -3,19 +3,18 @@ layout: default
 permalink: /:title
 ---
 <div>
-  <p><span class="desc">var</span> Project <span class="func">=</span> <span class="desc">class</span> {</p>
-  <p>  <span class="func">constructor</span>(name) {</p>
-  <p>    <span class="obj">this</span>.<span class="obj">name</span> <span class="func">=</span> name;</p>
-  <p>  }</p>
-  <p>  <span class="obj">this</span>.<span class="obj">about</span> <span class="func">=</span> <span class="str">""</span>;</p>
-  <p>  <span class="obj">this</span>.<span class="obj">tages</span> <span class="func">=</span> [];</p>
-  <p>  <span class="obj">this</span>.<span class="obj">url</span> <span class="func">=</span> <span class="str">""</span>;</p>
-  <p>}</p>
-  <br>
-  <p><span class="desc">var</span> thisProject <span class="func">=</span> <span class="desc">new</span> <span class="class">Project</span>(<span class="str">"{{ page.title }}"</span>);</p>
-  <p><span class="obj">thisProject</span>.<span class="obj">about</span> <span class="func">=</span> <span class="str">"{{ page.summary }}"</span>;</p>
-  <p><a href="{{ page.link }}" class="obj">thisProject</a>.<a href="{{ page.link }}" class="obj">url</a> <span class="func">=</span> <a href="{{ page.link }}" class="str">"{{ page.link }}"</a>;</p>
-  <p><span class="obj">thisProject</span>.<span class="obj">tags</span> <span class="func">=</span> [{% for tag in page.categories %} <span class="str">"{{ tag }}"</span>, {% endfor %}<span class="str">"project"</span>];</p>
-  <br>
-  <p><a href="{{ 'projects' | relative_url }}" class="obj">module</a>.<a href="{{ 'projects' | relative_url }}" class="obj">exports</a> <span class="func">=</span> <a href="{{ 'projects' | relative_url }}">thisProject</a>;</p>
+	<p><span class="key">struct</span> Project {</p>
+	<p>{{ site.tab }}<span class="key">var</span> info = [<span class="other">String</span>:<span class="key">Any</span>]()</p>
+	<p>{{ site.tab }}<span class="key">var</span> owner:<span class="class">Person</span>?</p>
+	<p>{{ site.tab }}<span class="key">init</span>(<span class="key">_</span> name: <span class="other">String</span>) {</p>
+	<p>{{ site.tab }}{{ site.tab }}<span class="class">info</span>[<span class="str">"name"</span>] = name</p>
+	<p>{{ site.tab }}}</p>
+	<p>}</p>
+	<br>
+	<p><span class="key">var</span> thisProject = <span class="class">Project</span>(<span class="str">"{{ page.title }}"</span>)</p>
+	<p><span class="class">thisProject</span>.<span class="class">info</span>[<span class="str">"about"</span>] = <span class="str">"{{ page.summary }}"</span></p>
+	<p><a href="{{ page.link }}">"class">thisProject</span>.<span class="class">info</span>[<span class="str">"url"</span>] = <span class="str">"{{ page.link }}"</span></a></p>
+	<p><span class="class">thisProject</span>.<span class="class">info</span>[<span class="str">"tags"</span>] = [{% for tag in page.categories %} <span class="str">"{{ tag }}"</span>{% if forloop.last == false %}, {% else %}]{% endif %}{% endfor %}</p>
+	<br>
+	<p><a href="{{ 'projects' | relative_url }}"><span class="func">thisProject</span>.<span class="class">owner</span> = <span class="class">justin</span></a></p>
 </div>

@@ -26,6 +26,7 @@ collections:
     output: false
   projects:
     output: true
+tab: "  "
 
 # Build settings
 markdown: kramdown

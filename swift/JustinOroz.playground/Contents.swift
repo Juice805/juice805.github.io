@@ -62,7 +62,8 @@ justin.about.resume = FileManager.default.contents(atPath: "resume.pdf")
 
 
 struct Project {
-	var info = [String:String]()
+	var info = [String:Any]()
+	var owner: Person?
 	init(_ name: String) {
 		info["name"] = name
 	}
@@ -71,7 +72,7 @@ struct Project {
 var thisProject = Project("Name")
 thisProject.info["about"] = "about"
 thisProject.info["url"] = "about"
-thisProject.info["tags"] = "about"
+thisProject.info["tags"] = ["about"]
 
-thisProject.info.forEach({some.projects[0][$0.0] = $0.1})
+thisProject.owner = justin
 
