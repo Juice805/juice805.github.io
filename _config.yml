@@ -16,24 +16,24 @@
 title: Some Guy's Website
 email: justin.oroz@me.com
 description: Made by Justin Oroz
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://justinoroz.me" # the base hostname & protocol for your site, e.g. http://example.com
 
 github: 
-	username: Juice805
-	url: https://github.com/juice805
+  username: Juice805
+  url: https://github.com/juice805
 
 steam: 
-	username: Juice
-	url: https://steamcommunity.com/id/Juice805
+  username: Juice
+  url: https://steamcommunity.com/id/Juice805
 
 facebook: 
-	username: Juice805
-	url: https://www.facebook.com/juice805
+  username: Juice805
+  url: https://www.facebook.com/juice805
 
 linkedin: 
-	username: Justin Oroz
-	url: https://www.linkedin.com/in/justinoroz/
+  username: Justin Oroz
+  url: https://www.linkedin.com/in/justinoroz/
 
 future: true
 credit: Template made by Haoda Wang
