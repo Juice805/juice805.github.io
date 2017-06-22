@@ -4,16 +4,18 @@ layout: default
 permalink: /projects
 ---
 <div>
-  <p><span class="desc">var</span> Projects <span href="func">=</span> <span class="desc">class</span> {</p>
-  <p>  <span class="obj">this</span>.<span class="obj">desc</span> <span class="func">=</span> <span class="str">"Here are all of the things I have worked on."</span>;</p>
-  <p>  <span class="obj">this</span>.<span class="obj">projects</span> <span class="func">=</span> [];</p>
+  <p><span class="key">struct</span> Projects {</p>
+  <p>  <span class="key">let</span> description = <span class="str">"Here are some of the things I have worked on."</span></p>
+  <p>  <span class="key">var</span> projects = [[<span class="other">String</span>: <span class="other">String</span>]]()</p>
   <p>}</p>
   <br>
+  <p><span class="key">var</span> some = <span class="class">justin</span>.<span class="class">projects</span>!</p>
+  <br>
   {% for project in site.posts %}
-  <p><a href="{{ project.url | relative_url }}"><span class="obj">this</span>.<span class="obj">projects</span>.<span class="func">append</span>({<span class="str">"name"</span> : <span class="str">"{{ project.title }}"</span>},</a></p>
-  <p><a href="{{ project.url | relative_url }}">                     {<span class="str">"date"</span>: <span class="str">"{{ project.date | date: "%b %-d, %Y" }}"</span>},</a></p>
-  <p><a href="{{ project.url | relative_url }}">                     {<span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>});</a></p>
+  <p><a href="{{ project.url | relative_url }}"><span class="class">some</span>.<span class="class">projects</span>.<span class="class">append</span>([<span class="str">"name"</span>: <span class="str">"{{ project.title }}"</span>,</a></p>
+  <p><a href="{{ project.url | relative_url }}">                     <span class="str">"date"</span>: <span class="str">"{{ project.date | date: "%b %-d, %Y" }}"</span>,</a></p>
+  <p><a href="{{ project.url | relative_url }}">                     <span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>])</a></p>
   <br>
   {% endfor %}
-  <p><a href="{{ site.url }}" class="obj">module</a>.<a href="{{ site.url }}" class="obj">exports</a> <span class="func">=</span> <a href="{{ site.url }}">Projects</a>;</p>
+  <p><a href="{{ site.url }}"><span class="class">justin</span>.<span class="class">projects</span> = <span class="class">some</span></a></p>
 </div>

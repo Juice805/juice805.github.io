@@ -1,1 +1,21 @@
 blurb: "Fresh Electrical Engineering Graduate, Embedded Software Developer, Indie iOS Developer"
+skills:
+  - "C++"
+  - "C"
+  - "Linux"
+  - "Swift"
+  - "Java"
+  - "Verilog"
+  - "Python"
+  - "ARM & PIC Assembly"
+  - "Javascript"
+  - "MATLAB"
+awards:
+  - {event: "Event", award: "Award"}
+likes:
+  - "Linux"
+  - "iOS Development"
+  - "Embedded Software Development"
+  - "Web Development"
+  - "FPGA Digital Design"
+  
