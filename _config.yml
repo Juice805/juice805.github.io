@@ -16,7 +16,7 @@
 title: Some Guy's Website
 email: justin.oroz@me.com
 description: Made by Justin Oroz
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://justinoroz.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Juice8O5
 github_username:  Juice805

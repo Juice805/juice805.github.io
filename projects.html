@@ -10,9 +10,9 @@ permalink: /projects
   <p>}</p>
   <br>
   {% for project in site.posts %}
-  <p><a href="{{ project.url | prepend: site.url }}"><span class="obj">this</span>.<span class="obj">projects</span>.<span class="func">append</span>({<span class="str">"name"</span> : <span class="str">"{{ project.title }}"</span>},</a></p>
-  <p><a href="{{ project.url | prepend: site.url }}">                     {<span class="str">"date"</span>: <span class="str">"{{ project.date | date: "%b %-d, %Y" }}"</span>},</a></p>
-  <p><a href="{{ project.url | prepend: site.url }}">                     {<span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>});</a></p>
+  <p><a href="{{ project.url | relative_url }}"><span class="obj">this</span>.<span class="obj">projects</span>.<span class="func">append</span>({<span class="str">"name"</span> : <span class="str">"{{ project.title }}"</span>},</a></p>
+  <p><a href="{{ project.url | relative_url }}">                     {<span class="str">"date"</span>: <span class="str">"{{ project.date | date: "%b %-d, %Y" }}"</span>},</a></p>
+  <p><a href="{{ project.url | relative_url }}">                     {<span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>});</a></p>
   <br>
   {% endfor %}
   <p><a href="{{ site.url }}" class="obj">module</a>.<a href="{{ site.url }}" class="obj">exports</a> <span class="func">=</span> <a href="{{ site.url }}">Projects</a>;</p>

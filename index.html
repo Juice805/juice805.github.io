@@ -9,9 +9,9 @@ layout: default
 	<p><span class="key">class</span> Person {</p>
 	
 	<p>  <span class="key">var</span> name: <span class="other">String</span></p>
-	<p>  <a href="{{ '/about.html' | prepend:site.url }}">  <span class="key">var</span> about: <span class="class">About</span>()</a></p>
+	<p>  <a href="{{ 'about.html' | relative_url }}">  <span class="key">var</span> about: <span class="class">About</span>()</a></p>
 	<p>  <span class="obj">this</span>.<span class="obj">skills</span> <span class="func">=</span> [];</p>
-	<p>  <a href="{{ '/projects.html' | prepend:site.url }}"> <span class="obj">this</span>.<span class="obj">projects</span> <span class="func">=</span> <span class="func">require</span>(<span class="str">"projects"</span>)</a>;</p>
+	<p>  <a href="{{ 'projects.html' | relative_url }}"> <span class="obj">this</span>.<span class="obj">projects</span> <span class="func">=</span> <span class="func">require</span>(<span class="str">"projects"</span>)</a>;</p>
 
 
 	<p>  <span class="key">init</span> (name: <span class="struct">String</span>) {</p>
@@ -19,16 +19,14 @@ layout: default
 	<p>  }</p>
 	<p>}</p>
 	<br>
-	<p><span class="key">var</span> harry <span class="func">=</span> <span class="key">new</span> <span class="class">Person</span>(<span class="str">"Justin"</span>);</p>
-	<p><a href="{{ '/about.html' | prepend:site.url }}"><span class="obj">harry</span>.<span class="obj">about</span> <span class="func">=</span> <span class="str">"Developer. Sysadmin. Graphic Designer."</span></a>;</p>
-	<p><span class="obj">harry</span>.<span class="obj">skills</span> <span class="func">=</span> [<span class="str">"C++"</span>, <span class="str">"Linux"</span>, <span class="str">"NodeJS"</span>, <span class="str">"MongoDB"</span>];</p>
-	<p><a href="{{ '/projects.html' | prepend:site.url }}"><span class="obj">harry</span>.<span class="obj">projects</span> <span class="func">=</span> <span class="func">require</span>(<span class="str">"projects"</span>);</a></p>
-	<p><span class="obj">harry</span>.<span class="obj">social</span> <span class="func">=</span> [<a href="https://github.com/h313">{<span class="str">"github"</span>: <span class="str">"h313"</span>}</a>,</p>
-	<p><a href="mailto:arandomawesomegeek@gmail.com"> {<span class="str">"email"</span>: <span class="str">"mailto:arandomawesomegeek@gmail.com"</span>},</a></p>
-	<p> {<span class="str">"PGP"</span>: <span class="str">"CA36 924B 4801 2BF6 F181 410E DC8B FFAA BDFB 6AEA"</span>},</p>
-	<p><a href="https://steamcommunity.com/id/h313"> {<span class="str">"steam"</span>: <span class="str">"Kernel Panic"</span>}</a>,</p>
-	<p><a href="https://last.fm/user/h313"> {<span class="str">"last.fm"</span>: <span class="str">"h313"</span>}</a>,</p>
-	<p><a href="https://www.facebook.com/wanghaoda"> {<span class="str">"facebook"</span>: <span class="str">"wanghaoda"</span>}</a>,</p>
-	<p><a href="https://www.linkedin.com/in/wanghaoda/"> {<span class="str">"linkedin"</span>: <span class="str">"Haoda Wang"</span>}</a>];</p>
+	<p><span class="key">var</span> justin <span class="func">=</span> <span class="key">new</span> <span class="class">Person</span>(<span class="str">"Justin"</span>);</p>
+	<p><a href="{{ 'about.html' | relative_url }}"><span class="obj">justin</span>.<span class="obj">about</span> <span class="func">=</span> <span class="str">"Developer. Sysadmin. Graphic Designer."</span></a>;</p>
+	<p><span class="obj">justin</span>.<span class="obj">skills</span> <span class="func">=</span> [<span class="str">"C++"</span>, <span class="str">"Linux"</span>, <span class="str">"NodeJS"</span>, <span class="str">"MongoDB"</span>];</p>
+	<p><a href="{{ 'projects.html' | relative_url }}"><span class="obj">harry</span>.<span class="obj">projects</span> <span class="func">=</span> <span class="func">require</span>(<span class="str">"projects"</span>);</a></p>
+	<p><span class="obj">justin</span>.<span class="obj">social</span> <span class="func">=</span> [<a href="https://github.com/juice805">{<span class="str">"github"</span>: <span class="str">"Juice805"</span>}</a>,</p>
+	<p><a href="mailto:justinoroz@me.com"> {<span class="str">"email"</span>: <span class="str">"justinoroz@me.com"</span>},</a></p>
+	<p><a href="https://steamcommunity.com/id/Juice805"> {<span class="str">"steam"</span>: <span class="str">"Juice"</span>}</a>,</p>
+	<p><a href="https://www.facebook.com/juice805"> {<span class="str">"facebook"</span>: <span class="str">"juice805"</span>}</a>,</p>
+	<p><a href="https://www.linkedin.com/in/justinoroz/"> {<span class="str">"linkedin"</span>: <span class="str">"Justin Oroz"</span>}</a>];</p>
 	<br>
 </div>
