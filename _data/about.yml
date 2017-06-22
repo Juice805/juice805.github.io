@@ -10,8 +10,8 @@ skills:
   - "ARM & PIC Assembly"
   - "Javascript"
   - "MATLAB"
-awards: []
-#  - {event: "Event", award: "Award"}
+awards: 
+  - {event: "SJSU Senior Project Symposium", award: "Best Oral Presentation"}
 
 likes:
   - "Linux"
@@ -19,4 +19,6 @@ likes:
   - "Embedded Software Development"
   - "Web Development"
   - "FPGA Digital Design"
-  
+resume: 
+  url: "resume.pdf"
+  local: true
