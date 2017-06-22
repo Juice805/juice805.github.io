@@ -15,5 +15,5 @@ permalink: /projects
   <p><a href="{{ project.url | prepend: site.url }}">                     {<span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>});</a></p>
   <br>
   {% endfor %}
-  <p><a href="{{ 'index.html' | prepend: site.url }}" class="obj">module</a>.<a href="{{ 'index.html' | prepend: site.url }}" class="obj">exports</a> <span class="func">=</span> <a href="{{ 'index.html' | prepend: site.url }}">Projects</a>;</p>
+  <p><a href="{{ site.url }}" class="obj">module</a>.<a href="{{ site.url }}" class="obj">exports</a> <span class="func">=</span> <a href="{{ site.url }}">Projects</a>;</p>
 </div>
