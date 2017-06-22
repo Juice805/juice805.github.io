@@ -1,0 +1,9 @@
+---
+layout: post
+title: "nodechat"
+date: 2016-12-10 11:53:44 -0400
+categories: chat web
+summary: "A self-hosted NodeJS chat service that respects your privacy!"
+link: "https://h313.github.io/nodeChat/"
+desc: "An anonymous chat client written with MongoDB, Express, AngularJS, and NodeJS. All messages are deleted after 10 minutes. Anyone can chat with any "handle"."
+---

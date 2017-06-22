@@ -1,0 +1,36 @@
+p {
+  font-family: "Consolas", monospace;
+  font-size: 14px;
+  margin: 0.2em;
+  color: #C5C8C6;
+  white-space: pre;
+}
+
+.desc {
+  color: #B294BA;
+}
+
+.func {
+  color: #81A2BE;
+}
+
+.str {
+  color: #B5BD68;
+}
+
+.class {
+  color: #F0C674;
+}
+
+.obj {
+  color: #CC6666;
+}
+
+a {
+  color: #C5C8C6;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1D1F21;
+}

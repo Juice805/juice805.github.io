@@ -1,0 +1,9 @@
+---
+layout: post
+title: "PixelMap"
+date: 2017-04-15 16:05:35 -0400
+categories: web backend python
+summary: "A backend for a /r/place clone"
+link: "https://github.com/h313/pixelmap_backend"
+desc: "/r/place was Reddit's 2017 April Fool's Day experiment, where each user was allowed to place one pixel onto a map containing 1 million pixels. This project contains a backend for a 1000x1000 grid /r/place clone. This backend was written with Redis and Flask. It uses the MAC address as authentication."
+---

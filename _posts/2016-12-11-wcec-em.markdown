@@ -1,0 +1,9 @@
+---
+layout: post
+title: "WCEC EM"
+date: 2016-12-11 10:00:00 -0400
+categories: church web
+summary: "A website for my church"
+link: "http://h313.info/wcec-em"
+desc: "A church website"
+---

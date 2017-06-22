@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Redirekt"
+date: 2016-05-09 11:53:44 -0400
+categories: proxy web
+summary: "A proxy server running on Google App Engine."
+link: "http://h313.info/redirekt"
+desc: "A proxy server made with Python and Google's App Engine so we can go on Imgur on the school networks. This web app was created using GitHub Pages, Materialize, and Python."
+---

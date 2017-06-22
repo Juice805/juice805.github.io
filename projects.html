@@ -1,0 +1,19 @@
+---
+title: Projects
+layout: default
+permalink: /projects
+---
+<div>
+  <p><span class="desc">var</span> Projects <span href="func">=</span> <span class="desc">class</span> {</p>
+  <p>  <span class="obj">this</span>.<span class="obj">desc</span> <span class="func">=</span> <span class="str">"Here are all of the things I have worked on."</span>;</p>
+  <p>  <span class="obj">this</span>.<span class="obj">projects</span> <span class="func">=</span> [];</p>
+  <p>}</p>
+  <br>
+  {% for project in site.posts %}
+  <p><a href="{{ project.url | prepend: site.url }}"><span class="obj">this</span>.<span class="obj">projects</span>.<span class="func">append</span>({<span class="str">"name"</span> : <span class="str">"{{ project.title }}"</span>},</a></p>
+  <p><a href="{{ project.url | prepend: site.url }}">                     {<span class="str">"date"</span>: <span class="str">"{{ project.date | date: "%b %-d, %Y" }}"</span>},</a></p>
+  <p><a href="{{ project.url | prepend: site.url }}">                     {<span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>});</a></p>
+  <br>
+  {% endfor %}
+  <p><a href="{{ 'index.html' | prepend: site.url }}" class="obj">module</a>.<a href="{{ 'index.html' | prepend: site.url }}" class="obj">exports</a> <span class="func">=</span> <a href="{{ 'index.html' | prepend: site.url }}">Projects</a>;</p>
+</div>

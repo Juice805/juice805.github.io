@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Water.sh"
+date: 2017-02-23 11:53:44 -0400
+categories: bash linux
+summary: "Tells you when you need to drink water."
+link: "https://github.com/h313/water"
+desc: "Water.sh is a quick little bash script to remind you to drink water every 2 hours"
+---

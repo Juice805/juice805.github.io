@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div>
+  <p><span class="desc">var</span> Project <span class="func">=</span> <span class="desc">class</span> {</p>
+  <p>  <span class="func">constructor</span>(name) {</p>
+  <p>    <span class="obj">this</span>.<span class="obj">name</span> <span class="func">=</span> name;</p>
+  <p>  }</p>
+  <p>  <span class="obj">this</span>.<span class="obj">about</span> <span class="func">=</span> <span class="str">""</span>;</p>
+  <p>  <span class="obj">this</span>.<span class="obj">tages</span> <span class="func">=</span> [];</p>
+  <p>  <span class="obj">this</span>.<span class="obj">url</span> <span class="func">=</span> <span class="str">""</span>;</p>
+  <p>}</p>
+  <br>
+  <p><span class="desc">var</span> thisProject <span class="func">=</span> <span class="desc">new</span> <span class="class">Project</span>(<span class="str">"{{ page.title }}"</span>);</p>
+  <p><span class="obj">thisProject</span>.<span class="obj">about</span> <span class="func">=</span> <span class="str">"{{ page.summary }}"</span>;</p>
+  <p><a href="{{ page.link }}" class="obj">thisProject</a>.<a href="{{ page.link }}" class="obj">url</a> <span class="func">=</span> <a href="{{ page.link }}" class="str">"{{ page.link }}"</a>;</p>
+  <p><span class="obj">thisProject</span>.<span class="obj">tags</span> <span class="func">=</span> [{% for tag in page.categories %} <span class="str">"{{ tag }}"</span>, {% endfor %}<span class="str">"project"</span>];</p>
+  <br>
+  <p><a href="{{ '/projects.html' | prepend: site.url }}" class="obj">module</a>.<a href="{{ '/projects.html' | prepend: site.url }}" class="obj">exports</a> <span class="func">=</span> <a href="{{ '/projects.html' | prepend: site.url }}">thisProject</a>;</p>
+</div>
