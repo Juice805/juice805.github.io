@@ -23,6 +23,6 @@ layout: default
 	<p><a href="{{ 'about.html' | relative_url }}"><span class="obj">justin</span>.<span class="obj">about</span> <span class="func">=</span> <span class="str">"Developer. Sysadmin. Graphic Designer."</span></a>;</p>
 	<p><span class="obj">justin</span>.<span class="obj">skills</span> <span class="func">=</span> [<span class="str">"C++"</span>, <span class="str">"Linux"</span>, <span class="str">"NodeJS"</span>, <span class="str">"MongoDB"</span>];</p>
 	<p><a href="{{ 'projects.html' | relative_url }}"><span class="obj">justin</span>.<span class="obj">projects</span> <span class="func">=</span> <span class="func">require</span>(<span class="str">"projects"</span>);</a></p>
-	<p><span class="obj">justin</span>.<span class="obj">social</span> <span class="func">=</span>	[{% for page in site.social %}{% if forloop.first == false %}<p>						{% endif %}<a href="mailto:{{  site.email  }}"> {<span class="str">"email"</span>: <span class="str">"{{  site.email  }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</a></p>{% endfor %}
+	<p><span class="obj">justin</span>.<span class="obj">social</span> <span class="func">=</span> [{% for page in site.social %}{% if forloop.first == false %}<p>                {% endif %}<a href="{{  page.link  }}"><span class="str">"{{  page.website  }}"</span>: <span class="str">"{{  page.username  }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</a></p>{% endfor %}
 	<br>
 </div>
