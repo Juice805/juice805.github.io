@@ -24,6 +24,7 @@ struct Projects {
 
 struct About {
 	var me: String?
+	var awards: [String: String]?
 	var likes: [String]?
 	var skills: [String]?
 	var resume: Data?
@@ -59,6 +60,8 @@ justin.projects = some
 // About Structure goes here
 
 justin.about.resume = FileManager.default.contents(atPath: "resume.pdf")
+justin.about.likes = ["likes"]
+justin.about.skills = ["skills"]
 
 
 struct Project {
