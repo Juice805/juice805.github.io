@@ -10,7 +10,8 @@ skills:
   - "ARM & PIC Assembly"
   - "Javascript"
   - "MATLAB"
-awards:
+awards: []
+#  - {event: "Event", award: "Award"}
 
 likes:
   - "Linux"
