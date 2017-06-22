@@ -76,3 +76,12 @@ thisProject.info["tags"] = ["about"]
 
 thisProject.owner = justin
 
+
+struct Website {
+	static var home: Person?
+	static var projects = [Project]()
+}
+Website.home = justin
+Website.home!.projects = some
+Website.projects.append(thisProject)
+
