@@ -22,11 +22,11 @@ layout: default
 	<p><span class="key">var</span> justin <span class="func">=</span> <span class="key">new</span> <span class="class">Person</span>(<span class="str">"Justin"</span>);</p>
 	<p><a href="{{ 'about.html' | relative_url }}"><span class="obj">justin</span>.<span class="obj">about</span> <span class="func">=</span> <span class="str">"Developer. Sysadmin. Graphic Designer."</span></a>;</p>
 	<p><span class="obj">justin</span>.<span class="obj">skills</span> <span class="func">=</span> [<span class="str">"C++"</span>, <span class="str">"Linux"</span>, <span class="str">"NodeJS"</span>, <span class="str">"MongoDB"</span>];</p>
-	<p><a href="{{ 'projects.html' | relative_url }}"><span class="obj">harry</span>.<span class="obj">projects</span> <span class="func">=</span> <span class="func">require</span>(<span class="str">"projects"</span>);</a></p>
-	<p><span class="obj">justin</span>.<span class="obj">social</span> <span class="func">=</span> [<a href="https://github.com/juice805">{<span class="str">"github"</span>: <span class="str">"Juice805"</span>}</a>,</p>
-	<p><a href="mailto:justinoroz@me.com"> {<span class="str">"email"</span>: <span class="str">"justinoroz@me.com"</span>},</a></p>
-	<p><a href="https://steamcommunity.com/id/Juice805"> {<span class="str">"steam"</span>: <span class="str">"Juice"</span>}</a>,</p>
-	<p><a href="https://www.facebook.com/juice805"> {<span class="str">"facebook"</span>: <span class="str">"juice805"</span>}</a>,</p>
-	<p><a href={{  site.linkedin.url  }}> {<span class="str">"linkedin"</span>: <span class="str">"{{  site.linkedin.username  }}"</span>}</a>];</p>
+	<p><a href="{{ 'projects.html' | relative_url }}"><span class="obj">justin</span>.<span class="obj">projects</span> <span class="func">=</span> <span class="func">require</span>(<span class="str">"projects"</span>);</a></p>
+	<p><span class="obj">justin</span>.<span class="obj">social</span> <span class="func">=</span> [<a href="{{  site.github.url  }}">{<span class="str">"github"</span>: <span class="str">"{{  site.github.username  }}"</span>}</a>,</p>
+	<p><a href="mailto:{{  site.email  }}"> {<span class="str">"email"</span>: <span class="str">"{{  site.email  }}"</span>},</a></p>
+	<p><a href="{{  site.steam.url  }}"> {<span class="str">"steam"</span>: <span class="str">"{{  site.steam.username  }}"</span>}</a>,</p>
+	<p><a href="{{  site.facebook.url  }}"> {<span class="str">"facebook"</span>: <span class="str">"{{  site.facebook.username  }}"</span>}</a>,</p>
+	<p><a href="{{  site.linkedin.url  }}"> {<span class="str">"linkedin"</span>: <span class="str">"{{  site.linkedin.username  }}"</span>}</a>];</p>
 	<br>
 </div>
