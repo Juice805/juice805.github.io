@@ -9,7 +9,7 @@ class Person {
 	var projects: Projects?
 	var social = [String: String]()
 
-	init(name: String) {
+	init(_ name: String) {
 		self.name = name
 	}
 }
@@ -30,8 +30,8 @@ struct About {
 
 // Person Struct goes here
 
-let justin = Person(name: "justin")
-justin.about.me = "Fresh Electrical Engineering Graduate, Embedded Software Developer, & Indie iOS Developer"
+let justin = Person("Justin")
+justin.about.me = "Fresh Electrical Engineering Graduate, Embedded Software Developer, Indie iOS Developer"
 justin.skills = ["C++", "C", "Linux", "Swift", "Java"]
 justin.projects = Projects()
 justin.social = ["github": "Juice805",
