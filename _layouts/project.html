@@ -16,5 +16,5 @@ layout: default
   <p><a href="{{ page.link }}" class="obj">thisProject</a>.<a href="{{ page.link }}" class="obj">url</a> <span class="func">=</span> <a href="{{ page.link }}" class="str">"{{ page.link }}"</a>;</p>
   <p><span class="obj">thisProject</span>.<span class="obj">tags</span> <span class="func">=</span> [{% for tag in page.categories %} <span class="str">"{{ tag }}"</span>, {% endfor %}<span class="str">"project"</span>];</p>
   <br>
-  <p><a href="{{ '/projects.html' | prepend: site.url }}" class="obj">module</a>.<a href="{{ '/projects.html' | prepend: site.url }}" class="obj">exports</a> <span class="func">=</span> <a href="{{ '/projects.html' | prepend: site.url }}">thisProject</a>;</p>
+  <p><a href="{{ 'projects' | relative_url }}" class="obj">module</a>.<a href="{{ 'projects' | relative_url }}" class="obj">exports</a> <span class="func">=</span> <a href="{{ 'projects' | relative_url }}">thisProject</a>;</p>
 </div>

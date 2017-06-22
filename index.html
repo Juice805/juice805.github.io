@@ -9,9 +9,9 @@ layout: default
 	<p><span class="key">class</span> Person {</p>
 	
 	<p>  <span class="key">var</span> name: <span class="other">String</span></p>
-	<p>  <a href="{{ 'about.html' | relative_url }}"><span class="key">var</span> about = <span class="class">About</span>()</a></p>
+	<p>  <a href="{{ 'about' | relative_url }}"><span class="key">var</span> about = <span class="class">About</span>()</a></p>
 	<p>  <span class="key">var</span> skills = [<span class="other">String</span>]()</p>
-	<p>  <a href="{{ 'projects.html' | relative_url }}"><span class="key">var</span> projects: <span class="class">Projects</span>?</a></p>
+	<p>  <a href="{{ 'projects' | relative_url }}"><span class="key">var</span> projects: <span class="class">Projects</span>?</a></p>
 	<p>  <span class="key">var</span> social = [<span class="other">String</span>: <span class="other">String</span>]()</p>
 	<p>  <span class="key">static var</span> home: <span class="class">Person</span>?</p>
 	<p>  <span class="key">init</span> (<span class="key">_</span> name: <span class="struct">String</span>) {</p>
@@ -20,9 +20,9 @@ layout: default
 	<p>}</p>
 	<br>
 	<p><span class="key">let</span> justin = <span class="class">Person</span>(<span class="str">"Justin"</span>)</p>
-	<p><a href="{{ 'about.html' | relative_url }}"><span class="class">justin</span>.<span class="class">about</span>.<span class="class">me</span> = <span class="str">"{{ site.data.about.blurb }}"</span></a></p>
-	<p><a href="{{ 'about.html' | relative_url }}"><span class="class">justin</span>.<span class="class">skills</span> = [{% for skill in site.data.skills %}<span class="str">"{{ skill }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}{% endfor %}</a></p>
-	<p><a href="{{ 'projects.html' | relative_url }}"><span class="class">justin</span>.<span class="class">projects</span> = <span class="class">Projects</span>()</a></p>
+	<p><a href="{{ 'about' | relative_url }}"><span class="class">justin</span>.<span class="class">about</span>.<span class="class">me</span> = <span class="str">"{{ site.data.about.blurb }}"</span></a></p>
+	<p><a href="{{ 'about' | relative_url }}"><span class="class">justin</span>.<span class="class">skills</span> = [{% for skill in site.data.skills %}<span class="str">"{{ skill }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}{% endfor %}</a></p>
+	<p><a href="{{ 'projects' | relative_url }}"><span class="class">justin</span>.<span class="class">projects</span> = <span class="class">Projects</span>()</a></p>
 	<p><span class="class">justin</span>.<span class="class">social</span> = [{% for page in site.social %}{% if forloop.first == false %}<p>                 {% endif %}<a href="{{  page.link  }}"><span class="str">"{{  page.website  }}"</span>: <span class="str">"{{  page.username  }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</a></p>{% endfor %}
 	<br>
 	<p><a href="{{ site.url }}"><span class="class">Person</span>.<span class="class">home</span> = <span class="class">justin</span></a></p>
