@@ -38,7 +38,7 @@ justin.social = ["github": "Juice805",
                  "email": "justin.oroz@me.com",
                  "steam": "Juice805",
                  "facebook": "juice805",
-                 "linkedin": "Justin Oroz"];
+                 "linkedin": "Justin Oroz"]
 
 
 
