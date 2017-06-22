@@ -10,4 +10,4 @@ categories:
 summary: "A placeholder until I've added them"
 link: "https://github.com/juice805"
 desc: "This page will have a list of projects"
-...
+---
