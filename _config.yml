@@ -14,13 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Some Guy's Website
-email: arandomawesomegeek@gmail.com
-description: Made by Haoda Wang
+email: justin.oroz@me.com
+description: Made by Justin Oroz
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://h313.info/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: w_h313
-github_username:  h313
+url: "https://justinoroz.me/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: Juice8O5
+github_username:  Juice805
 future: true
+credit: Template made by Haoda Wang
 
 # Build settings
 markdown: kramdown

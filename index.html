@@ -9,15 +9,14 @@ layout: default
 	<p><span class="key">class</span> Person {</p>
 	
 	<p>  <span class="key">var</span> name: <span class="other">String</span></p>
-	<p><a href="{{ '/about.html' | prepend:site.url }}">  <span class="key">var</span> about: <span class="class">About</span>()</a></p>
-	<p> <span class="obj">this</span>.<span class="obj">skills</span> <span class="func">=</span> [];</p>
-	<p><a href="{{ '/projects.html' | prepend:site.url }}"> <span class="obj">this</span>.<span class="obj">projects</span> <span class="func">=</span> <span class="func">require</span>(<span class="str">"projects"</span>)</a>;</p>
+	<p>  <a href="{{ '/about.html' | prepend:site.url }}">  <span class="key">var</span> about: <span class="class">About</span>()</a></p>
+	<p>  <span class="obj">this</span>.<span class="obj">skills</span> <span class="func">=</span> [];</p>
+	<p>  <a href="{{ '/projects.html' | prepend:site.url }}"> <span class="obj">this</span>.<span class="obj">projects</span> <span class="func">=</span> <span class="func">require</span>(<span class="str">"projects"</span>)</a>;</p>
 
 
-	<p> <span class="key">init</span> (name: <span class="struct">String</span>) {</p>
-	<p> <span class="key">self</span>.<span class="obj">name</span> = name</p>
-	<p> }</p>
-	<p> }</p>
+	<p>  <span class="key">init</span> (name: <span class="struct">String</span>) {</p>
+	<p>    <span class="key">self</span>.<span class="obj">name</span> = name</p>
+	<p>  }</p>
 	<p>}</p>
 	<br>
 	<p><span class="key">var</span> harry <span class="func">=</span> <span class="key">new</span> <span class="class">Person</span>(<span class="str">"Justin"</span>);</p>
