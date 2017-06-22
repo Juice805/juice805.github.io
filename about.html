@@ -3,12 +3,11 @@ title: About
 layout: default
 permalink: /about
 ---
+<div>
 {% assign awards = site.data.about.awards %}
 {% assign likes = site.data.about.likes %}
 {% assign skills = site.data.about.skills %}
 {% assign resume = site.data.about.resume %}
-
-<div>
 	<p><span class="key">struct</span> About {</p>
 	<p>{{ site.tab }}<span class="key">var</span> me: <span class="other">String</span>?</p>
 	{% if awards.empty == false %}<p>{{ site.tab }}<span class="key">var</span> awards: [<span class="other">String</span>: <span class="other">String</span>]?</p>{% endif %}
