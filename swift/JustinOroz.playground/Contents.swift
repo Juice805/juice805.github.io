@@ -8,6 +8,7 @@ class Person {
 	var skills = [String]()
 	var projects: Projects?
 	var social = [String: String]()
+	static var home: Person?
 
 	init(_ name: String) {
 		self.name = name
@@ -17,6 +18,7 @@ class Person {
 struct Projects {
 	let description = "Here are some of the things I have worked on."
 	var projects = [[String: String]]()
+	var owner = justin
 }
 
 
@@ -40,6 +42,7 @@ justin.social = ["github": "Juice805",
                  "facebook": "juice805",
                  "linkedin": "Justin Oroz"]
 
+Person.home = justin
 
 
 // Projects Struct goes here
@@ -56,3 +59,19 @@ justin.projects = some
 // About Structure goes here
 
 justin.about.resume = FileManager.default.contents(atPath: "resume.pdf")
+
+
+struct Project {
+	var info = [String:String]()
+	init(_ name: String) {
+		info["name"] = name
+	}
+}
+
+var thisProject = Project("Name")
+thisProject.info["about"] = "about"
+thisProject.info["url"] = "about"
+thisProject.info["tags"] = "about"
+
+thisProject.info.forEach({some.projects[0][$0.0] = $0.1})
+

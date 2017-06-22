@@ -7,15 +7,16 @@ permalink: /projects
   <p><span class="key">struct</span> Projects {</p>
   <p>  <span class="key">let</span> description = <span class="str">"Here are some of the things I have worked on."</span></p>
   <p>  <span class="key">var</span> projects = [[<span class="other">String</span>: <span class="other">String</span>]]()</p>
+  <p>  <a href="{{ site.url }}"><span class="key">var</span> owner = <span class="class">justin</span></a></p>
   <p>}</p>
   <br>
   <p><span class="key">var</span> some = <span class="class">justin</span>.<span class="class">projects</span>!</p>
   <br>
   {% for project in site.posts %}
   <p><a href="{{ project.url | relative_url }}"><span class="class">some</span>.<span class="class">projects</span>.<span class="class">append</span>([<span class="str">"name"</span>: <span class="str">"{{ project.title }}"</span>,</a></p>
-  <p><a href="{{ project.url | relative_url }}">                     <span class="str">"date"</span>: <span class="str">"{{ project.date | date: "%b %-d, %Y" }}"</span>,</a></p>
-  <p><a href="{{ project.url | relative_url }}">                     <span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>])</a></p>
+  <p>                     <a href="{{ project.url | relative_url }}"><span class="str">"date"</span>: <span class="str">"{{ project.date | date: "%b %-d, %Y" }}"</span>,</a></p>
+  <p>                     <a href="{{ project.url | relative_url }}"><span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>])</a></p>
   <br>
   {% endfor %}
-  <p><a href="{{ site.url }}"><span class="class">justin</span>.<span class="class">projects</span> = <span class="class">some</span></a></p>
+  <p><a href="{{ site.url }}"><span class="class">Person</span>.<span class="class">home</span>.<span class="class">projects</span> = <span class="class">some</span></a></p>
 </div>

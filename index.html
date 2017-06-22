@@ -13,7 +13,7 @@ layout: default
 	<p>  <span class="key">var</span> skills = [<span class="other">String</span>]()</p>
 	<p>  <a href="{{ 'projects.html' | relative_url }}"><span class="key">var</span> projects: <span class="class">Projects</span>?</a></p>
 	<p>  <span class="key">var</span> social = [<span class="other">String</span>: <span class="other">String</span>]()</p>
-
+	<p>  <span class="key">static var</span> home: <span class="class">Person</span>?</p>
 	<p>  <span class="key">init</span> (<span class="key">_</span> name: <span class="struct">String</span>) {</p>
 	<p>    <span class="key">self</span>.<span class="obj">name</span> = name</p>
 	<p>  }</p>
@@ -25,4 +25,5 @@ layout: default
 	<p><a href="{{ 'projects.html' | relative_url }}"><span class="class">justin</span>.<span class="class">projects</span> = <span class="class">Projects</span>()</a></p>
 	<p><span class="class">justin</span>.<span class="class">social</span> = [{% for page in site.social %}{% if forloop.first == false %}<p>                 {% endif %}<a href="{{  page.link  }}"><span class="str">"{{  page.website  }}"</span>: <span class="str">"{{  page.username  }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</a></p>{% endfor %}
 	<br>
+	<p><a href="{{ site.url }}"><span class="class">Person</span>.<span class="class">home</span> = <span class="class">justin</span></a></p>
 </div>
