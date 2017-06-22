@@ -18,8 +18,23 @@ email: justin.oroz@me.com
 description: Made by Justin Oroz
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://justinoroz.me" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Juice8O5
-github_username:  Juice805
+
+github: 
+	username: Juice805
+	url: https://github.com/juice805
+
+steam: 
+	username: Juice
+	url: https://steamcommunity.com/id/Juice805
+
+facebook: 
+	username: Juice805
+	url: https://www.facebook.com/juice805
+
+linkedin: 
+	username: Justin Oroz
+	url: https://www.linkedin.com/in/justinoroz/
+
 future: true
 credit: Template made by Haoda Wang
 
