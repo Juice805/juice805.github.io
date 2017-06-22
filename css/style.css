@@ -22,11 +22,15 @@ p {
   color: #5C2699;
 }
 
+.comment {
+	color: #007400;
+}
+
 a {
-  color: #C5C8C6;
+  color: #000000;
   text-decoration: none;
 }
 
 body {
-  background-color: #1D1F21;
+  background-color: #FFFFFF;
 }
