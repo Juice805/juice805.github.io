@@ -17,13 +17,13 @@ permalink: /about
 	<p>}</p>
 	<br>
 {% if showAwards %}
-	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">awards</span> = [{% for award in site.data.about.awards %}{% if forloop.first == false %}<p>                 {% endif %}<span class="str">"{{ award.event }}"</span>: <span class="str">"{{ award.name }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
+	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">awards</span> = [{% for award in site.data.about.awards %}{% if forloop.first == false %}<p>                       {% endif %}<span class="str">"{{ award.event }}"</span>: <span class="str">"{{ award.name }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
 	<br>{% endif %}
 {% if showLikes  %}
-	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">likes</span> = [{% for like in site.data.about.likes %}{% if forloop.first == false %}<p>                 {% endif %}<span class="str">"{{ like }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
+	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">likes</span> = [{% for like in site.data.about.likes %}{% if forloop.first == false %}<p>                      {% endif %}<span class="str">"{{ like }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
 	<br>{% endif %}
 {% if showSkills %}
-	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">skills</span> = [{% for skill in site.data.about.skills %}{% if forloop.first == false %}<p>                 {% endif %}<span class="str">"{{ skill }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
+	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">skills</span> = [{% for skill in site.data.about.skills %}{% if forloop.first == false %}<p>                       {% endif %}<span class="str">"{{ skill }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
 	<br>{% endif %}
 {% if showResume %}
 	<p><a href="{% if resume.local == true %}{{ resume.url || relative_url }}{% else %}{{ resume.url }}{% endif %}"><span class="class">justin</span>.<span class="class">about</span>.<span class="class">resume</span> = <span class="other">FileManager</span>.<span class="key">default</span>.<span class="ometh">contents</span>(atPath: <span class="str">"resume.pdf"</span>)</a></p>{% endif %}
