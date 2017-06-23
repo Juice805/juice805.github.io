@@ -1,4 +1,9 @@
 blurb: "Fresh Electrical Engineering Graduate, Embedded Software Developer, Indie iOS Developer"
+degrees:
+  - {from: "San Jose State University", info: "B.S. Electrical Engineering, 3.31"}
+  - {from: "Santa Barbara City College", info: "A.S. Physics with Honors"}
+  - {from: "Santa Barbara City College", info: "A.A. Mathematics with Honors"}
+  
 skills:
   - "C++"
   - "C"
@@ -10,8 +15,11 @@ skills:
   - "ARM & PIC Assembly"
   - "Javascript"
   - "MATLAB"
+
 awards: 
   - {event: "SJSU Senior Project Symposium", name: "Best Oral Presentation"}
+  - {event: "SBCC 2012 Fall Semester", name: "President's Honor Roll"}
+  - {event: "SBCC 2012 Spring Semester", name: "President's Honor Roll"}
 
 likes:
   - "Linux"
@@ -19,6 +27,7 @@ likes:
   - "Embedded Software Development"
   - "Web Development"
   - "FPGA Digital Design"
+
 resume: 
   url: "resume.pdf"
   local: true
