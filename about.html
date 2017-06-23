@@ -4,6 +4,7 @@ layout: default
 permalink: /about
 ---
 <div>
+	{% assign showAwards = (site.data.about.awards.size > 0) %}
 	<p><span class="key">struct</span> About {</p>
 	<p>{{ site.tab }}<span class="key">var</span> me: <span class="other">String</span>?</p>
 	{% if site.data.about.awards.size > 0 %}<p>{{ site.tab }}<span class="key">var</span> awards: [<span class="other">String</span>: <span class="other">String</span>]?</p>{% endif %}
@@ -12,7 +13,7 @@ permalink: /about
 	{% if site.data.about.resume.size > 0 %}<p>{{ site.tab }}<span class="key">var</span> resume: <span class="other">Data</span>?</p>{% endif %}
 	<p>}</p>
 	<br>
-	{% if site.data.about.awards.empty == false %}<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">awards</span> = [{% for award in site.data.about.awards %}{% if forloop.first == false %}<p>                 {% endif %}<span class="str">"{{ award.event }}"</span>: <span class="str">"{{ award.name }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
+	{% if showAwards %}<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">awards</span> = [{% for award in site.data.about.awards %}{% if forloop.first == false %}<p>                 {% endif %}<span class="str">"{{ award.event }}"</span>: <span class="str">"{{ award.name }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
 	<br>{% endif %}
 {% if site.data.about.likes.empty == false %}
 	<p><span class="obj">harry</span>.<span class="obj">about</span>.<span class="obj">likes</span> <span class="func">=</span> [<span class="str">"Linux"</span>,</p>
