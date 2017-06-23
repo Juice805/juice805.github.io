@@ -90,3 +90,6 @@ Website.home!.projects = some
 Website.projects.append(thisProject)
 Website.home!.about = justin.about
 
+if let home = Website.home {
+	return home
+}
