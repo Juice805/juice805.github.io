@@ -17,9 +17,14 @@ div.selectable {
 	margin: initial;
 }
 
-.selectable:hover {
+.selectable:hover, .selectable.hover_effect {
 	background-color: #A4CDFF;
 	border-radius: 4px;
+}
+
+.hover {
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;        
 }
 
 .key { /* Keyword */
