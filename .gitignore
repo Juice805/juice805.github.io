@@ -12,3 +12,5 @@ dw_php_codehinting.config
 vendor/
 
 \.bundle/
+
+swift/JustinOroz\.playground/playground\.xcworkspace/xcuserdata/
