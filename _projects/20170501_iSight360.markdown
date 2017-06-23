@@ -1,0 +1,14 @@
+---
+layout: project
+title: "iSight360"
+date: 2017-05-24 13:26:44 -0400
+current: false
+categories: 
+  - "computer vision"
+  - opencv
+  - C++
+  - Linux
+summary: "Computer vision headset for the visually impaired"
+link: "https://github.com/AVE-GuidanceSystems"
+desc: "My groups award winning senior group project. Using stereoscopic cameras we user opencv libraries to calculate distance and alert users of obstacles in their immediate vicinity. The device also uses facial recognition to detect nearby people"
+...

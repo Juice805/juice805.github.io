@@ -2,6 +2,7 @@
 layout: project
 title: "placeholder"
 date: 2017-06-22 13:26:44 -0400
+current: false
 categories: 
   - testing
   - construction
