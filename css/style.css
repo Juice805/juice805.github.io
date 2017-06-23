@@ -14,6 +14,7 @@ div {
 
 div.selectable {
 	display: inline-block;
+	margin: initial;
 }
 
 .selectable:hover {
