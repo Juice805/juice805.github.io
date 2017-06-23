@@ -29,5 +29,5 @@ likes:
   - "FPGA Digital Design"
 
 resume: 
-  url: "resume.pdf"
-  local: true
+  url: "https://www.dropbox.com/s/blgd4sef3nl7au6/Resume%20.pdf?raw=1"
+  local: false

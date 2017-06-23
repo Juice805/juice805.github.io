@@ -12,10 +12,10 @@ permalink: /projects
   <br>
   <p><span class="key">var</span> some = <span class="class">justin</span>.<span class="class">projects</span>!</p>
   <br>
-  {% for project in site.projects reversed %}
+  {% for project in site.projects %}
   <div class="selectable"><p><a href="{{ project.url | relative_url }}"><span class="class">some</span>.<span class="class">projects</span>.<span class="ometh">append</span>([<span class="str">"name"</span>: <span class="str">"{{ project.title }}"</span>,</a></p>
-  <p>                     <a href="{{ project.url | relative_url }}"><span class="str">"date"</span>: <span class="str">"{{ project.date | date: "%b %-d, %Y" }}"</span>,</a></p>
-  <p>                     <a href="{{ project.url | relative_url }}"><span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>])</a></p></div>
+  <p>                      <a href="{{ project.url | relative_url }}"><span class="str">"date"</span>: <span class="str">"{% if project.current %}current{% else %}{{ project.date | date: "%b %Y" }}{% endif %}"</span>,</a></p>
+  <p>                      <a href="{{ project.url | relative_url }}"><span class="str">"description"</span>: <span class="str">"{{ project.summary }}"</span>])</a></p></div>
   <br>
   {% endfor %}
   <br>
