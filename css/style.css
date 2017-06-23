@@ -40,12 +40,15 @@ p {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-.return {
-	font-size: 16px;
+#return {
 	position: absolute;
 	left: 50%;
 	bottom: 10%;
 	transform: translateX(-50%);
+}
+
+#return p {
+	font-size: 16px;
 }
 
 a {
