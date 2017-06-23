@@ -10,7 +10,7 @@ permalink: /about
 {% assign showSkills = (site.data.about.skills.size > 0) %} 
 {% assign showResume = (site.data.about.resume.size > 0) %} 
 	<p><span class="key">struct</span> About {</p>
-	<p>{{ site.tab }}<span class="key">var</span> me: <span class="other">String</span>?</p>
+	<p>{{ site.tab }}<a href="{{ site.url }}" class="selectable"><span class="key">var</span> me: <span class="other">String</span>?</a></p>
 	{% if showDegrees %}<p>{{ site.tab }}<span class="key">var</span> degrees: [<span class="other">String</span>: <span class="other">String</span>]?</p>{% endif %}
 	{% if showAwards %}<p>{{ site.tab }}<span class="key">var</span> awards: [<span class="other">String</span>: <span class="other">String</span>]?</p>{% endif %}
 	{% if showLikes %}<p>{{ site.tab }}<span class="key">var</span> likes: [<span class="other">String</span>]?</p>{% endif %}
@@ -31,7 +31,7 @@ permalink: /about
 	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">skills</span> = [{% for skill in site.data.about.skills %}{% if forloop.first == false %}<p>                       {% endif %}<span class="str">"{{ skill }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
 	<br>{% endif %}
 {% if showResume %}
-	<p><a href="{% if resume.local == true %}{{ resume.url || relative_url }}{% else %}{{ resume.url }}{% endif %}"><span class="class">justin</span>.<span class="class">about</span>.<span class="class">resume</span> = <span class="other">FileManager</span>.<span class="key">default</span>.<span class="ometh">contents</span>(atPath: <span class="str">"resume.pdf"</span>)</a></p>{% endif %}
+	<p><a href="{% if resume.local == true %}{{ resume.url || relative_url }}{% else %}{{ resume.url }}{% endif %}" class="selectable"><span class="class">justin</span>.<span class="class">about</span>.<span class="class">resume</span> = <span class="other">FileManager</span>.<span class="key">default</span>.<span class="ometh">contents</span>(atPath: <span class="str">"resume.pdf"</span>)</a></p>{% endif %}
 	<br>
-	<p><a href="{{ site.url }}"><span class="class">Website</span>.<span class="class">home</span>!.<span class="class">about</span> = <span class="class">justin</span>.<span class="class">about</span></a></p>
+	<p><a href="{{ site.url }}" class="selectable"><span class="class">Website</span>.<span class="class">home</span>!.<span class="class">about</span> = <span class="class">justin</span>.<span class="class">about</span></a></p>
 </div>

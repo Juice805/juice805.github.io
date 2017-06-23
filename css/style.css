@@ -12,6 +12,15 @@ div {
     margin-top: 20px;
 }
 
+div.selectable {
+	display: inline-block;
+}
+
+.selectable:hover {
+	background-color: A4CDFF;
+	border-radius: 4px;
+}
+
 .key { /* Keyword */
 	color: #AA0D91;
 }
