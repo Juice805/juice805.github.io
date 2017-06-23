@@ -6,10 +6,10 @@ permalink: /about
 <div>
 	<p><span class="key">struct</span> About {</p>
 	<p>{{ site.tab }}<span class="key">var</span> me: <span class="other">String</span>?</p>
-	{% if site.data.about.awards > 0 %}<p>{{ site.tab }}<span class="key">var</span> awards: [<span class="other">String</span>: <span class="other">String</span>]?</p>{% endif %}
-	{% if site.data.about.likes > 0 %}<p>{{ site.tab }}<span class="key">var</span> likes: [<span class="other">String</span>]?</p>{% endif %}
-	{% if site.data.about.skills > 0 %}<p>{{ site.tab }}<span class="key">var</span> skills: [<span class="other">String</span>]?</p>{% endif %}
-	{% if site.data.about.resume > 0 %}<p>{{ site.tab }}<span class="key">var</span> resume: <span class="other">Data</span>?</p>{% endif %}
+	{% if site.data.about.awards.size > 0 %}<p>{{ site.tab }}<span class="key">var</span> awards: [<span class="other">String</span>: <span class="other">String</span>]?</p>{% endif %}
+	{% if site.data.about.likes.size > 0 %}<p>{{ site.tab }}<span class="key">var</span> likes: [<span class="other">String</span>]?</p>{% endif %}
+	{% if site.data.about.skills.size > 0 %}<p>{{ site.tab }}<span class="key">var</span> skills: [<span class="other">String</span>]?</p>{% endif %}
+	{% if site.data.about.resume.size > 0 %}<p>{{ site.tab }}<span class="key">var</span> resume: <span class="other">Data</span>?</p>{% endif %}
 	<p>}</p>
 	<br>
 	{% if site.data.about.awards.empty == false %}<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">awards</span> = [{% for award in site.data.about.awards %}{% if forloop.first == false %}<p>                 {% endif %}<span class="str">"{{ award.event }}"</span>: <span class="str">"{{ award.name }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
