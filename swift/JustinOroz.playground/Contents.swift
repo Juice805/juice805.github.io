@@ -83,8 +83,10 @@ thisProject.owner = justin
 struct Website {
 	static var home: Person?
 	static var projects = [Project]()
+	static var about = About()
 }
 Website.home = justin
 Website.home!.projects = some
 Website.projects.append(thisProject)
+Website.home!.about = justin.about
 
