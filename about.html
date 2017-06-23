@@ -19,7 +19,7 @@ permalink: /about
 	<p>}</p>
 	<br>
 {% if showDegrees %}
-	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">degrees</span> = [{% for degree in site.data.about.degrees %}{% if forloop.first == false %}<p>                       {% endif %}<span class="str">"{{ degree.from }}"</span>: <span class="str">"{{ degree.info }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
+	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">degrees</span> = [{% for degree in site.data.about.degrees %}{% if forloop.first == false %}<p>                        {% endif %}<span class="str">"{{ degree.from }}"</span>: <span class="str">"{{ degree.info }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
 	<br>{% endif %}
 {% if showAwards %}
 	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">awards</span> = [{% for award in site.data.about.awards %}{% if forloop.first == false %}<p>                       {% endif %}<span class="str">"{{ award.event }}"</span>: <span class="str">"{{ award.name }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
