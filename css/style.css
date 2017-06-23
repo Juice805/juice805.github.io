@@ -1,33 +1,40 @@
 p {
-  font-family: 'Anonymous Pro', 'Consolas', monospace;
-  font-size: 14px;
-  margin: 0.2em;
-  color: #000000;
-  white-space: pre;
+	font-family: 'Anonymous Pro', 'Consolas', monospace;
+	font-size: 14px;
+	margin: 0.2em;
+	color: #000000;
+	white-space: pre;
 }
 
 .key { /* Keyword */
-  color: #AA0D91;
+	color: #AA0D91;
 }
 
 .class { /* Project Class */
-  color: #3F6E74;
+	color: #3F6E74;
 }
 
 .str { /* String */
-  color: #C41A16;
+	color: #C41A16;
 }
 
 .other { /* Other Class */
-  color: #5C2699;
+	color: #5C2699;
 }
 
 .ometh { /* Other Method */
-  color: #2E0D6E;
+	color: #2E0D6E;
 }
 
 .comment {
 	color: #007400;
+}
+
+#nil {
+	font-size: 28px;
+	position: static;
+	left: 30%;
+	top: 30%;
 }
 
 a {
