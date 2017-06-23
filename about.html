@@ -4,7 +4,6 @@ layout: default
 permalink: /about
 ---
 <div>
-	{% assign showAwards = (site.data.about.awards.size > 0) %}
 	<p><span class="key">struct</span> About {</p>
 	<p>{{ site.tab }}<span class="key">var</span> me: <span class="other">String</span>?</p>
 	{% if site.data.about.awards.size > 0 %}<p>{{ site.tab }}<span class="key">var</span> awards: [<span class="other">String</span>: <span class="other">String</span>]?</p>{% endif %}
@@ -13,15 +12,16 @@ permalink: /about
 	{% if site.data.about.resume.size > 0 %}<p>{{ site.tab }}<span class="key">var</span> resume: <span class="other">Data</span>?</p>{% endif %}
 	<p>}</p>
 	<br>
-	{% if showAwards %}<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">awards</span> = [{% for award in site.data.about.awards %}{% if forloop.first == false %}<p>                 {% endif %}<span class="str">"{{ award.event }}"</span>: <span class="str">"{{ award.name }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
+{% if site.data.about.awards.size > 0 %}
+	<p><span class="class">justin</span>.<span class="class">about</span>.<span class="class">awards</span> = [{% for award in site.data.about.awards %}{% if forloop.first == false %}<p>                 {% endif %}<span class="str">"{{ award.event }}"</span>: <span class="str">"{{ award.name }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</p>{% endfor %}
 	<br>{% endif %}
-{% if site.data.about.likes.empty == false %}
+{% if site.data.about.likes.size > 0  %}
 	<p><span class="obj">harry</span>.<span class="obj">about</span>.<span class="obj">likes</span> <span class="func">=</span> [<span class="str">"Linux"</span>,</p>
 	<p>                     <span class="str">"Web Development"</span>,</p>
 	<p>                     <span class="str">"Deep Learning"</span>,</p>
 	<p>                     <span class="str">"Networking"</span>];</p>
 	<br>{% endif %}
-{% if site.data.about.skills.empty == false %}
+{% if site.data.about.skills.size > 0 %}
 	<p><span class="obj">harry</span>.<span class="obj">about</span>.<span class="obj">skills</span> <span class="func">=</span> [<span class="str">"Redis"</span>,</p>
 	<p>                      <span class="str">"MongoDB"</span>,</p>
 	<p>                      <span class="str">"TensorFlow"</span>,</p>
@@ -31,6 +31,6 @@ permalink: /about
 	<p>                      <span class="str">"AngularJS 1+2"</span>,</p>
 	<p>                      <span class="str">"Linux"</span>];</p>
 	<br>{% endif %}
-{% if site.data.about.resume.empty == false %}
+{% if site.data.about.resume %}
 	<p><a href="{% if resume.local == true %}{{ resume.url || relative_url }}{% else %}{{ resume.url }}{% endif %}"><span class="class">justin</span>.<span class="class">about</span>.<span class="class">resume</span> = <span class="other">FileManager</span>.<span class="key">default</span>.<span class="ometh">contents</span>(atPath: <span class="str">"resume.pdf"</span>)</a></p>{% endif %}
 </div>
