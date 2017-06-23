@@ -32,8 +32,12 @@ p {
 
 #nil {
 	font-size: 28px;
-	text-align: center;
-	vertical-align: middle;
+	font-size: 2vw;
+	font-weight: bold;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
 }
 
 a {
