@@ -26,4 +26,6 @@ layout: default
 	<p><span class="class">justin</span>.<span class="class">social</span> = [{% for page in site.social %}{% if forloop.first == false %}<p>                 {% endif %}<a href="{{  page.link  }}" class="selectable"><span class="str">"{{  page.website  }}"</span>: <span class="str">"{{  page.username  }}"</span>{% if forloop.last == false %},{% else %}]{% endif %}</a></p>{% endfor %}
 	<br>
 	<p><a href="{{ site.url }}" class="selectable"><span class="class">Website</span>.<span class="class">home</span> = <span class="class">justin</span></a></p>
+	
+	<p id="updated">Updated {{ site.updated }}</p>
 </div>

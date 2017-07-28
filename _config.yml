@@ -20,6 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://justinoroz.me" # the base hostname & protocol for your site, e.g. http://example.com
 future: true
 credit: "Template made by Haoda Wang"
+updated: "July 27th, 2017"
 
 collections:
   social:
