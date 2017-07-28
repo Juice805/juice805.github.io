@@ -73,7 +73,7 @@ div.selectable {
 	font-size: 1.3vw;
 }
 
-#updated #updated:hover{
+#updated, #updated:hover {
 	position: fixed;
 	right: 10px;
 	bottom: 10px;
