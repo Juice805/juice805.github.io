@@ -1,4 +1,3 @@
-# justinoroz.me
-My Website.
+# justin.oroz.me
 
-Based on h313.github.io
+My Website.
