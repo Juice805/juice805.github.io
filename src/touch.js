@@ -1,6 +1,10 @@
-$(document).ready(function() {
-    $('.hover').bind('touchstart touchend', function(e) {
-        //e.preventDefault();
-        $(this).toggleClass('hover_effect');
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.hover').forEach(function(el) {
+    el.addEventListener('touchstart', function() {
+      this.classList.toggle('hover_effect');
     });
+    el.addEventListener('touchend', function() {
+      this.classList.toggle('hover_effect');
+    });
+  });
 });

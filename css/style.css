@@ -23,8 +23,7 @@ div.selectable {
 }
 
 .hover {
-	-webkit-user-select: none;
-	-webkit-touch-callout: none;        
+	user-select: none;
 }
 
 .key { /* Keyword */
@@ -79,14 +78,6 @@ div.selectable {
 	bottom: 10px;
 	color: LightGray;
 	cursor: default;
-	
-	/* Make text unselectable */
-	-webkit-user-select: none; /* Chrome/Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+ */
-
-	/* future */
-	-o-user-select: none;
 	user-select: none;
 }
 
